@@ -117,8 +117,6 @@ body{
     font-size: var(--fs-base);
     font-weight: var(--fw-bold);
     color: var(--clr-primary-2);
-    
-    
 }
 .personal-info p{
     font-size: 0.8rem;
@@ -128,4 +126,83 @@ body{
 .personal-info span{
     color: var(--clr-primary-3);
     
+}
+.social-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.followers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.followers h2{
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-2);
+}
+.followers p{
+    font-size: 0.7rem;
+    color: var(--clr-neutral-1);
+    letter-spacing: 0.1rem;
+    font-weight: var(--fw-bold);
+}
+.likes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.likes h2{
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-2);
+}
+.likes p{
+    font-size: 0.7rem;
+    color: var(--clr-neutral-1);
+    letter-spacing: 0.1rem;
+    font-weight: var(--fw-bold);
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photos h2{
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-2);
+}
+.photos p{
+    font-size: 0.7rem;
+    color: var(--clr-neutral-1);
+    letter-spacing: 0.1rem;
+    font-weight: var(--fw-bold);
+}
+@media (max-width: 768px){
+    body{
+        overflow: hidden;
+    }
+    .background{
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+    .card{
+        width: 90%;
+        max-width: 90%;
+        max-height: 90%;
+    }
+   .top{
+       transform: translateY(-55%);
+       transform: translateX(-55%);
+   }
+    .bottom{
+         transform: translateY(35%);
+         transform: translateX(45%);
+    }
 }
